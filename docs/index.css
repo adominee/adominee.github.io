@@ -1,10 +1,16 @@
-.icon{
+.MyIcon{
   border-radius: 50%;
   width: 224px;
 }
 
 .contact{
   width: 75px;
+  margin: 1rem;
+}
+
+.LanguageIcon{
+  display: block;
+  width: 10rem;
   margin: auto;
 }
 
@@ -17,10 +23,12 @@
 }
 
 .subtitle{
+  text-align: center;
   font-size: 55px;
 }
 
 p{
+  text-align: center;
   font-size: 25px;
 }
 
@@ -30,13 +38,14 @@ p{
   justify-content: center;
 }
 
-.content{
-  margin-right: auto;
-  margin-left: auto;
-}
-
 .container{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+}
+
+.content{
+  flex: 1;
+  margin-right: auto;
+  margin-left: auto;
 }
