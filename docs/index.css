@@ -28,6 +28,7 @@
 }
 
 p{
+  display: block;
   text-align: center;
   font-size: 25px;
 }
@@ -48,4 +49,9 @@ p{
   flex: 1;
   margin-right: auto;
   margin-left: auto;
+}
+
+ul{
+  margin: auto;
+  width: 20em;
 }
