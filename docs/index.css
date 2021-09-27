@@ -1,57 +1,106 @@
 .MyIcon{
   border-radius: 50%;
-  width: 224px;
+  max-width: 100%;
 }
 
-.contact{
-  width: 75px;
-  margin: 1rem;
+@media (max-width:600px) {
+  .MyIcon{
+    width: 20%;
+  }
+  .topContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .topElement{
+    margin: 5%;
+  }
+  .contact{
+    max-width: 100%;
+    width: 75px;
+    margin: 1rem;
+  }
+  .LanguageIcon{
+    display: block;
+    width: 10rem;
+    margin: auto;
+  }
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  .contactContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
 }
 
-.LanguageIcon{
-  display: block;
-  width: 10rem;
-  margin: auto;
-}
+@media (min-width:601px) {
+  
+  .MyIcon{
+    width: 224px;
+  }
+  
+  .contact{
+    max-width: 100%;
+    width: 75px;
+    margin: 1rem;
+  }
+  
+  .LanguageIcon{
+    display: block;
+    width: 10rem;
+    margin: auto;
+  }
+  
+  .topElement{
+    margin: 20px;
+  }
+  
+  .name{
+    font-size: 72px;
+  }
+  
+  .subtitle{
+    text-align: center;
+    font-size: 55px;
+  }
+  
+  p{
+    display: block;
+    text-align: center;
+    font-size: 25px;
+  }
+  
+  .topContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
 
-.topElement{
-  margin: 20px;
-}
-
-.name{
-  font-size: 72px;
-}
-
-.subtitle{
-  text-align: center;
-  font-size: 55px;
-}
-
-p{
-  display: block;
-  text-align: center;
-  font-size: 25px;
-}
-
-.topName{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.container{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.content{
-  flex: 1;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-ul{
-  margin: auto;
-  width: 20em;
+  .contactContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .content{
+    flex: 1;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  ul{
+    margin: auto;
+    width: 20em;
+  }
 }
