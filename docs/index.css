@@ -1,34 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
+
 .MyIcon{
   border-radius: 50%;
   max-width: 100%;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.topContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.topElement{
+  margin: 4%;
+}
+
+.subtitle{
+  text-align: center;
+}
+
+p{
+  display: block;
+  text-align: center;
+}
+
+.contact{
+  max-width: 100%;
+  width: 75px;
+  margin: 1rem;
+}
+
+.LanguageIcon{
+  display: block;
+  width: 10rem;
+  margin: auto;
 }
 
 @media (max-width:600px) {
   .MyIcon{
     width: 20%;
   }
-  .topContainer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .topElement{
-    margin: 5%;
-  }
-  .contact{
-    max-width: 100%;
-    width: 75px;
-    margin: 1rem;
-  }
-  .LanguageIcon{
-    display: block;
-    width: 10rem;
-    margin: auto;
-  }
   .container{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
     flex-direction: column;
   }
   .contactContainer{
@@ -44,47 +66,16 @@
     width: 224px;
   }
   
-  .contact{
-    max-width: 100%;
-    width: 75px;
-    margin: 1rem;
-  }
-  
-  .LanguageIcon{
-    display: block;
-    width: 10rem;
-    margin: auto;
-  }
-  
-  .topElement{
-    margin: 20px;
-  }
-  
   .name{
     font-size: 72px;
   }
   
   .subtitle{
-    text-align: center;
     font-size: 55px;
   }
   
   p{
-    display: block;
-    text-align: center;
     font-size: 25px;
-  }
-  
-  .topContainer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .container{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
   }
 
   .contactContainer{
