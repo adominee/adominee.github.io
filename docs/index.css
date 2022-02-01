@@ -46,6 +46,12 @@ p{
   margin: auto;
 }
 
+.content{
+  flex: 1;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 @media (max-width:1000px) {
   .MyIcon{
     width: 20%;
@@ -57,6 +63,11 @@ p{
     display: flex;
     align-items: center;
     justify-content: space-around;
+  }
+  .LanguageIcon{
+    display: block;
+    width: 6rem;
+    margin: auto;
   }
 }
 
@@ -86,12 +97,6 @@ p{
     display: flex;
     align-items: center;
     justify-content: space-around;
-  }
-  
-  .content{
-    flex: 1;
-    margin-right: auto;
-    margin-left: auto;
   }
   
   ul{
