@@ -3,6 +3,7 @@
 .MyIcon{
   border-radius: 50%;
   max-width: 100%;
+  outline: 3px solid #6e6e6e;
 }
 
 body {
@@ -39,15 +40,16 @@ p{
 }
 
 .contact{
-  max-width: 80%;
-  width: 75px;
-  margin: 1rem;
+  display: flex;;
+  align-items: center;
+}
+
+.contactIcon{
+    width: 3rem;
 }
 
 .LanguageIcon{
   display: block;
-  width: 8rem;
-  margin-right: 5px;
 }
 
 .languageContent{
@@ -123,21 +125,41 @@ p{
 }
 
 @media (max-width:1000px) {
+
+    p{
+        margin: auto;
+    }
+
   .MyIcon{
-    width: 20%;
+    width: 5rem;
+  }
+  .name{
+    font-size: 20px;
+    margin: 0.5rem 0 0.5rem 0;
   }
   .container{
     flex-direction: column;
+    margin: 0;
   }
   .contactContainer{
+    margin-bottom:1rem ;
     display: flex;
     align-items: center;
     justify-content: space-around;
   }
+
+  .contactIcon{
+    width: 1.5rem;
+  }
+
+  .content{
+    margin-top: 20px;
+  }
+
   .LanguageIcon{
     display: block;
     width: 6rem;
-    margin: auto;
+    margin: 0 1rem 0 1rem;
   }
 }
 
@@ -148,11 +170,13 @@ p{
   }
   
   .MyIcon{
-    width: 224px;
+    width: 180px;
   }
   
   .name{
-    font-size: 72px;
+    font-size: 48px;
+    text-align: center;
+    margin: 1rem 0 1rem 0;
   }
   
   .subtitle{
@@ -167,6 +191,12 @@ p{
     display: flex;
     align-items: center;
     justify-content: space-around;
+  }
+
+  .LanguageIcon{
+    display: block;
+    width: 8rem;
+    margin-right: 5px;
   }
   
   ul{
