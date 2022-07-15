@@ -193,12 +193,28 @@ p{
     justify-content: space-around;
   }
 
+  .languageParagraph{
+    margin: auto;
+  }
+
   .LanguageIcon{
     display: block;
     width: 8rem;
-    margin-right: 5px;
+    margin: auto 0 auto ;
+  }
+
+  .expressIcon{
+    width: 6rem;
+    margin: 8px auto 8px auto;
   }
   
+  .nodeIcon{
+    object-fit: cover;
+    width: 6rem;
+    height: 2rem;
+    margin: 8px auto 8px auto;
+  }
+
   ul{
     margin: auto;
     width: 20em;
