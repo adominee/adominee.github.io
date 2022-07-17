@@ -52,6 +52,18 @@ p{
   display: block;
 }
 
+.expressIcon{
+  width: 8rem;
+  margin: 8px auto 8px auto;
+}
+
+.nodeIcon{
+  object-fit: cover;
+  width: 8rem;
+  height: 2rem;
+  margin: 8px auto 8px auto;
+}
+
 .languageContent{
     display: flex;
     align-items: center;
@@ -198,21 +210,8 @@ p{
   }
 
   .LanguageIcon{
-    display: block;
     width: 8rem;
     margin: auto 0 auto ;
-  }
-
-  .expressIcon{
-    width: 6rem;
-    margin: 8px auto 8px auto;
-  }
-  
-  .nodeIcon{
-    object-fit: cover;
-    width: 6rem;
-    height: 2rem;
-    margin: 8px auto 8px auto;
   }
 
   ul{
