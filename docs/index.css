@@ -93,43 +93,15 @@ p{
     top: 0;
     bottom: 0;
     left:50%;
-    margin-left: -3px;
-}
-
-.timeline-content::before{
-    content: '';
-    height: 0;
-    position:absolute;
-    top:22px;
-    width: 0;
-    z-index: 1;
-    left: 30px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent transparent transparent wheat;
+    margin-left: auto;
 }
 
 .timeline-content{
     padding: 10px 40px;
-    margin:10% 0 0 30px;
+    margin: 4rem auto 4rem auto;
     position: relative;
     background-color: white;
     border-radius: 6px;
-    width: 50%;
-    left:50%;
-}
-
-.timeline-content::after{
-    content:'';
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    right: -17px;
-    left: -46px;
-    background-color: white;
-    border: 4px solid #45c499;
-    top:15px;
-    border-radius:50%;
     z-index: 1;
 }
 
