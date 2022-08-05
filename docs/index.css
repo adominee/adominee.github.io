@@ -108,6 +108,17 @@ p{
     text-align: unset;
 }
 
+.columnIcon{
+    margin: auto 0 auto 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.languageOther{
+    text-align: center;
+    white-space: nowrap;
+}
+
 @media (max-width:1000px) {
 
     p{
