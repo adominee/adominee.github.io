@@ -53,14 +53,14 @@ p{
 
 .expressIcon{
   width: 8rem;
-  margin: 8px auto 8px auto;
+  margin: 1rem auto 1rem auto;
 }
 
 .nodeIcon{
   object-fit: cover;
   width: 8rem;
   height: 2rem;
-  margin: 8px auto 8px auto;
+  margin: 1rem auto 1rem auto;
 }
 
 .languageContent{
@@ -71,7 +71,7 @@ p{
 
 .content{
   flex: 1;
-  padding: 10px;
+  padding: 1rem;
 }
 
 .radius{
@@ -81,7 +81,7 @@ p{
 
 .timeline{
     position: relative;
-    margin: 0 0 50px 0;
+    margin: 0 0 2rem 0;
 }
 
 .timeline::after{
@@ -96,7 +96,7 @@ p{
 }
 
 .timeline-content{
-    padding: 10px 40px;
+    padding: 1rem 4rem;
     margin: 4rem auto 4rem auto;
     position: relative;
     background-color: white;
@@ -137,7 +137,7 @@ p{
   }
 
   .content{
-    margin-top: 20px;
+    margin-top: 2rem;
   }
 
   .LanguageIcon{
@@ -147,12 +147,12 @@ p{
   }
   .expressIcon{
     width: 6rem;
-    margin: 8px 1rem 8px 1rem;
+    margin: 0.5rem 1rem 0.5rem 1rem;
   }
   
   .nodeIcon{
     width: 6rem;
-    margin: 8px 1rem 8px 1rem;
+    margin: 0.5rem 1rem 0.5rem 1rem;
   }
 
   ul{
@@ -186,11 +186,11 @@ p{
   }
 
   .content + .content{
-    margin-left: 20px;
+    margin-left: 2rem;
 }
 
 .container + .container{
-    margin-top: 20px;
+    margin-top: 2rem;
 }
 
   .contactContainer{
@@ -210,7 +210,7 @@ p{
 
   ul{
     margin: auto;
-    width: 20em;
+    width: 20rem;
   }
 }
 /*
