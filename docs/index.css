@@ -81,7 +81,6 @@ p{
 
 .timeline{
     position: relative;
-    max-width: 1200px;
     margin: 0 0 50px 0;
 }
 
@@ -103,6 +102,10 @@ p{
     background-color: white;
     border-radius: 6px;
     z-index: 1;
+}
+
+.qualify{
+    text-align: unset;
 }
 
 @media (max-width:1000px) {
@@ -150,6 +153,11 @@ p{
   .nodeIcon{
     width: 6rem;
     margin: 8px 1rem 8px 1rem;
+  }
+
+  ul{
+    margin: auto;
+    width: 20em;
   }
 }
 
