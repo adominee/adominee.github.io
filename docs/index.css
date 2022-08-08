@@ -211,7 +211,7 @@ p{
   }
 
   .languageParagraph{
-    margin: auto;
+    margin: auto 1rem auto 1rem;
   }
 
   .LanguageIcon{
