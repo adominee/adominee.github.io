@@ -69,12 +69,26 @@ function MyProfileComponent() {
     )
   }
 
+// スキル・資格などなど
 
+function MySkillComponent() {
+    return (
+        <div className="container w-4/6 mx-auto my-10">
+            <div className="flex flex-row">
+                <h2 className="text-2xl">Skills</h2>
+            </div>
+            <div className="flex flex-row">
+                <h2 className="text-2xl">Certificates</h2>
+            </div>
+        </div>
+    )
+}
 
 export default function TopPage() {
     return (
         <div>
             <MyProfileComponent />
+            <MySkillComponent />
         </div>
     )
   }
