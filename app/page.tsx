@@ -85,10 +85,29 @@ function MySkillComponent() {
     <div className="container w-4/6 mx-auto my-10">
       <div className="flex flex-col">
         <h2 className="text-3xl my-6">Skills</h2>
-        <SkillBlockComponent skillName="C++" comments="競技プログラミングで使っています。Highest は 905 です。業プロの書き方はできない。" />
-        <SkillBlockComponent skillName="Python" comments="大学の授業やインターンで使っています。型を意識して使っています。" />
-        <SkillBlockComponent skillName="TypeScript" comments="バイトや個人で使っています。最近型の楽しさがなんとなくわかってきた。" />
-        <SkillBlockComponent skillName="Next.js" comments="このサイトの作成に使用。React 含めてちょこちょこお世話になりそう。" />
+        <CardBlockComponent name="C++" comments="競技プログラミングで使っています。Highest は 905 です。業プロの書き方はできない。" />
+        <CardBlockComponent name="Python" comments="大学の授業やインターンで使っています。型を意識して使っています。" />
+        <CardBlockComponent name="TypeScript" comments="バイトや個人で使っています。最近型の楽しさがなんとなくわかってきた。" />
+        <CardBlockComponent name="Next.js" comments="このサイトの作成に使用。React 含めてちょこちょこお世話になりそう。" />
+      </div>
+    </div>
+  )
+}
+
+// 資格を表示するコンポーネント
+// TODO: 資格名が二段組になってしまうのを修正する
+function QualificationComponent() {
+  return (
+    <div className="container w-4/6 mx-auto my-10">
+      <div className="flex flex-col">
+        <h2 className="text-3xl my-6">Qualifications</h2>
+        <CardBlockComponent name="ITパスポート" comments="2019 年に取得。" />
+        <CardBlockComponent name="基本情報技術者試験" comments="2021 年に取得。" />
+        <CardBlockComponent name="応用情報技術者試験" comments="2021 年に取得。" />
+        <CardBlockComponent name="登録セキスぺ" comments="2024 年春季試験にて情報処理安全確保支援士試験に合格、2024 年 10 月に登録セキスぺに登録。" />
+        <CardBlockComponent name="G 検定" comments="2022 年に取得。" />
+        <CardBlockComponent name="色彩検定 3 級" comments="2024 年に取得。" />
+        <CardBlockComponent name="色彩検定 UC 級" comments="2024 年に取得。" />
       </div>
     </div>
   )
@@ -99,6 +118,7 @@ export default function TopPage() {
     <div>
       <MyProfileComponent />
       <MySkillComponent />
+      <QualificationComponent />
     </div>
   )
 }
