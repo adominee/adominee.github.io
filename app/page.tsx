@@ -70,11 +70,10 @@ function MyProfileComponent() {
 }
 
 // スキル表示用のブロックコンポーネント
-function SkillBlockComponent({ skillName, comments }: { skillName: string, comments: string }) {
-  console.log(skillName)
+function CardBlockComponent({ name, comments }: { name: string, comments: string }) {
   return (
     <div className="grid grid-cols-3 gap-41608 my-3">
-      <h3 className="text-2xl mr-6 mt-0 mb-auto whitespace-pre-wrap">{skillName}</h3>
+      <h3 className="text-2xl mr-6 mt-0 mb-auto whitespace-pre-wrap">{name}</h3>
       <p className='col-span-2 text-base mb-0 mt-auto whitespace-pre-wrap'>{comments}</p>
     </div>
   )
