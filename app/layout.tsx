@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 
+import Header from '../components/header'
 import './global.css'
 
 export const metadata: Metadata = {
@@ -20,7 +21,14 @@ export default function RootLayout({
         </style>
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
       </head>
-      <body className='min-w-96 max-w-3xl mx-auto my-10'>{children}</body>
+      <body>
+        <header>
+          <Header />
+        </header>
+        <main className='min-w-96 max-w-3xl mx-auto my-10'>
+          {children}
+        </main>
+      </body>
     </html>
   )
 }
