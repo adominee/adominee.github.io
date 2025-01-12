@@ -73,8 +73,8 @@ function MyProfileComponent() {
 function CardBlockComponent({ name, comments }: { name: string, comments: string }) {
   return (
     <div className="grid grid-cols-3 gap-41608 my-3">
-      <h3 className="text-2xl mr-6 mt-0 mb-auto whitespace-pre-wrap">{name}</h3>
-      <p className='col-span-2 text-base mb-0 mt-auto whitespace-pre-wrap'>{comments}</p>
+      <h3 className="text-2xl break-words mr-6 mt-0 mb-auto whitespace-pre-wrap">{name}</h3>
+      <p className='col-span-2 text-base break-words mb-0 mt-auto whitespace-pre-wrap'>{comments}</p>
     </div>
   )
 }
@@ -117,9 +117,9 @@ function QualificationComponent() {
 function WorksBlockComponent({ name, comments, link }: { name: string, comments: string, link: string }) {
   return (
     <div className="grid grid-cols-3 gap-41608 my-3">
-      <h3 className="text-2xl mr-6 mt-0 mb-auto whitespace-pre-wrap">{name}</h3>
+      <h3 className="text-2xl break-words mr-6 mt-0 mb-auto whitespace-pre-wrap">{name}</h3>
       <div className='col-span-2  mb-0 mt-auto'>
-        <p className='text-base whitespace-pre-wrap'>
+        <p className='text-base break-words whitespace-pre-wrap'>
           {comments}
           <br />
           <a href={link} target="_blank" rel="noopener noreferrer">{link}</a>
