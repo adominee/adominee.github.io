@@ -69,16 +69,28 @@ function MyProfileComponent() {
   )
 }
 
-// スキル・資格などなど
+// スキル表示用のブロックコンポーネント
+function SkillBlockComponent({ skillName, comments }: { skillName: string, comments: string }) {
+  console.log(skillName)
+  return (
+    <div className="grid grid-cols-3 gap-41608 my-3">
+      <h3 className="text-2xl mr-6 mt-0 mb-auto whitespace-pre-wrap">{skillName}</h3>
+      <p className='col-span-2 text-base mb-0 mt-auto whitespace-pre-wrap'>{comments}</p>
+    </div>
+  )
+}
+
+// スキル(使える言語やフレームワーク)
 
 function MySkillComponent() {
   return (
     <div className="container w-4/6 mx-auto my-10">
-      <div className="flex flex-row">
-        <h2 className="text-2xl">Skills</h2>
-      </div>
-      <div className="flex flex-row">
-        <h2 className="text-2xl">Certificates</h2>
+      <div className="flex flex-col">
+        <h2 className="text-3xl my-6">Skills</h2>
+        <SkillBlockComponent skillName="C++" comments="競技プログラミングで使っています。Highest は 905 です。業プロの書き方はできない。" />
+        <SkillBlockComponent skillName="Python" comments="大学の授業やインターンで使っています。型を意識して使っています。" />
+        <SkillBlockComponent skillName="TypeScript" comments="バイトや個人で使っています。最近型の楽しさがなんとなくわかってきた。"/>
+        <SkillBlockComponent skillName="Next.js" comments="このサイトの作成に使用。React 含めてちょこちょこお世話になりそう。" />
       </div>
     </div>
   )
