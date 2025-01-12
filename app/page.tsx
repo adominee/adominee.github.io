@@ -81,7 +81,6 @@ function SkillBlockComponent({ skillName, comments }: { skillName: string, comme
 }
 
 // スキル(使える言語やフレームワーク)
-
 function MySkillComponent() {
   return (
     <div className="container w-4/6 mx-auto my-10">
@@ -89,7 +88,7 @@ function MySkillComponent() {
         <h2 className="text-3xl my-6">Skills</h2>
         <SkillBlockComponent skillName="C++" comments="競技プログラミングで使っています。Highest は 905 です。業プロの書き方はできない。" />
         <SkillBlockComponent skillName="Python" comments="大学の授業やインターンで使っています。型を意識して使っています。" />
-        <SkillBlockComponent skillName="TypeScript" comments="バイトや個人で使っています。最近型の楽しさがなんとなくわかってきた。"/>
+        <SkillBlockComponent skillName="TypeScript" comments="バイトや個人で使っています。最近型の楽しさがなんとなくわかってきた。" />
         <SkillBlockComponent skillName="Next.js" comments="このサイトの作成に使用。React 含めてちょこちょこお世話になりそう。" />
       </div>
     </div>
