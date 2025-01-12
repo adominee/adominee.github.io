@@ -113,12 +113,41 @@ function QualificationComponent() {
   )
 }
 
+// 成果物表示用のブロックコンポーネント
+function WorksBlockComponent({ name, comments, link }: { name: string, comments: string, link: string }) {
+  return (
+    <div className="grid grid-cols-3 gap-41608 my-3">
+      <h3 className="text-2xl mr-6 mt-0 mb-auto whitespace-pre-wrap">{name}</h3>
+      <div className='col-span-2  mb-0 mt-auto'>
+        <p className='text-base whitespace-pre-wrap'>
+          {comments}
+          <br />
+          <a href={link} target="_blank" rel="noopener noreferrer">{link}</a>
+        </p>
+      </div>
+    </div>
+  )
+}
+
+// 成果物の紹介欄
+function WorkComponent() {
+  return (
+    <div className="container w-4/6 mx-auto my-10">
+      <div className="flex flex-col">
+        <h2 className="text-3xl my-6">Works</h2>
+        <WorksBlockComponent name="dorimiamn's Portfolio" comments="このサイトです。" link="https://dorimiamn.github.io/" />
+      </div>
+    </div>
+  )
+}
+
 export default function TopPage() {
   return (
     <div>
       <MyProfileComponent />
       <MySkillComponent />
       <QualificationComponent />
+      <WorkComponent />
     </div>
   )
 }
