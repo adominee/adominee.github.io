@@ -14,7 +14,10 @@ export default function RootLayout({
   }) {
     return (
       <html lang="ja">
-        <body>{children}</body>
+        <head>
+          <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        </head>
+        <body className='min-w-96 max-w-3xl mx-auto my-10'>{children}</body>
       </html>
     )
   }
