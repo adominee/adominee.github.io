@@ -1,46 +1,27 @@
 import Image from 'next/image'
 
+function SNSLinkWithIcon({href,alt,imageSrc}:{href: string, alt: string, imageSrc: string}) {
+  return (
+    <a href={href} target="_blank" rel="noopener noreferrer" className='mx-2'>
+      <Image
+        src={imageSrc}
+        width={50}
+        height={50}
+        alt={alt}
+      />
+    </a>
+  )
+}
+
 // 各種 SNS Link 用コンポーネント
 
 function SNSLinkComponent() {
   return (
-    <div className="flex flex-row w-full">
-      <a href="https://github.com/dorimiamn" target="_blank" rel="noopener noreferrer">
-        <Image
-          className='mx-2'
-          src="/github-mark.png"
-          width={50}
-          height={50}
-          alt="GitHub"
-        />
-      </a>
-      <a href="https://x.com/dorimiamn" target="_blank" rel="noopener noreferrer">
-        <Image
-          className='mx-2'
-          src="/logo-black-x.png"
-          width={50}
-          height={50}
-          alt="Twitter"
-        />
-      </a>
-      <a href="https://qiita.com/dorimiamn" target="_blank" rel="noopener noreferrer">
-        <Image
-          className='mx-2'
-          src="/qiita-icon.png"
-          width={50}
-          height={50}
-          alt="Qiita"
-        />
-      </a>
-      <a href="https://misskey.kyoupro.com/@dorimiamn" target="_blank" rel="noopener noreferrer">
-        <Image
-          className='mx-2'
-          src="/misskey_icon.png"
-          width={50}
-          height={50}
-          alt="Misskey Kyoupro"
-        />
-      </a>
+    <div className="flex flex-row w-full justify-center items-center">
+      <SNSLinkWithIcon href="https://github.com/dorimiamn" alt="GitHub" imageSrc="/github-mark.png"/>
+      <SNSLinkWithIcon href="https://x.com/dorimiamn" alt="X" imageSrc="/logo-black-x.png"/>
+      <SNSLinkWithIcon href="https://qiita.com/dorimiamn" alt="Qiita" imageSrc="/qiita-icon.png"/>
+      <SNSLinkWithIcon href="https://misskey.kyoupro.com/@dorimiamn" alt="Misskey Kyoupro" imageSrc="/misskey_icon.png"/>
     </div>
   )
 }
