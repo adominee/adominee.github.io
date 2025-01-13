@@ -32,14 +32,14 @@ function MyProfileComponent() {
     <div className="container w-4/6 mx-auto my-10">
       <div className="flex flex-row">
         <Image
-          className="rounded-full"
+          className="rounded-full object-contain m-auto"
           src="/profile_icon_square.jpg"
           width={100}
           height={100}
           alt="Picture of dorimiamn's icon"
         />
         <div className="flex flex-col w-5/6 mx-4 my-0">
-          <h1 className="text-4xl mb-2">dorimiamn</h1>
+          <h1 className="text-4xl mt-1 mb-4 text-center">dorimiamn</h1>
           <SNSLinkComponent />
         </div>
       </div>
