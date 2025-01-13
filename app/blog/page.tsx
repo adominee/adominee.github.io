@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { client } from '../../utils/microcms'
+import { client } from '../../lib/microcms'
 
 type Props = {
   id: string,

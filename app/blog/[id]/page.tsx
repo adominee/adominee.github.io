@@ -1,4 +1,4 @@
-import { client } from '../../../utils/microcms'
+import { client } from '../../../lib/microcms'
 import dayjs from 'dayjs'
 
 type Props = {
