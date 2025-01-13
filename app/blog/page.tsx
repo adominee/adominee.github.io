@@ -24,17 +24,22 @@ export default async function BlogList() {
   return (
     <div className='container w-4/6 mx-auto my-10'>
       <h1>記事一覧</h1>
-      <ul>
-        {
-          posts.map((post: Props) => (
-            <li key={post.id}>
-              <Link href={`/blog/${post.id}`}>
-                {post.title}
-              </Link>
-            </li>
-          ))
-        }
-      </ul>
+      {
+        posts.length === 0 ?
+          <p>ごめんなさい！記事が見つかりませんでした。</p>
+          :
+          <ul>
+            {
+              posts.map((post: Props) => (
+                <li key={post.id}>
+                  <Link href={`/blog/${post.id}`}>
+                    {post.title}
+                  </Link>
+                </li>
+              ))
+            }
+          </ul>
+      }
     </div>
   )
 }
