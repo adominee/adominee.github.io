@@ -34,7 +34,7 @@ export default async function BlogPostPage({params}:{params: Promise<{id: string
   return (
     <div className='container w-4/6 mx-auto my-10'>
       <div className='mb-10'>
-        <h1 className='text-2xl mb-3'>{post.title}</h1>
+        <h1 className='text-3xl mb-3'>{post.title}</h1>
         <p className='text-xs'>公開日:{publishDate}</p>
         {publishDate !== updateDate && <p className='text-xs'>更新日:{updateDate}</p>}
       </div>

@@ -6,4 +6,23 @@
     html {
         font-family: "Kiwi Maru", system-ui, sans-serif;
     }
+    h1 {
+        @apply text-2xl font-bold my-1;
+    }
+    h2 {
+        @apply text-xl font-bold my-1;
+    }
+    h3 {
+        @apply text-lg font-bold my-1;
+    }
+    h4 {
+        @apply text-base font-bold my-1;
+    }
+    div[data-filename] {
+        @apply bg-slate-900 text-sm text-slate-300 p-2 rounded my-1;
+    }
+    p > code {
+        @apply bg-slate-900 text-sm text-slate-300 p-1 rounded;
+    }
 }
+
